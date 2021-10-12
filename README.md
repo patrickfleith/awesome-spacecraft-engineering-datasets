@@ -14,7 +14,7 @@ A list of awesome and diverse datasets related to space vehicle engineering for 
 - [**NASA Airfoil Self-Noise Data Set**](https://archive.ics.uci.edu/ml/datasets/airfoil+self-noise) - **< 1MB - Regression Task**
   - The NASA data set is obtained from a series of aerodynamic and acoustic tests of two and three-dimensional airfoil blade sections conducted in an anechoic wind tunnel. The span of the airfoil and the observer position were the same in all of the experiments. The objective is to predict the aerofoil noise (the scale sound pressure level), *Thomas F. Brooks, D. Stuart Pope and Michael A. Marcolini (NASA), Donor: Dr. Roberto Lopez*
 
-- [**NASA Bearing Dataset**](https://www.kaggle.com/vinayak123tyagi/bearing-dataset) - **6.08 GB - Prognosis for Predictive/Preventive Maintenance**
+- [**NASA Bearing Dataset**](https://www.kaggle.com/vinayak123tyagi/bearing-dataset) - **6.08 GB - Prognosis for Predictive / Preventive Maintenance**
   - Four bearings were installed on a shaft. Three (3) data sets are included in the data packet. Each data set describes a test-to-failure experiment. Each data set consists of individual files that are 1-second vibration signal snapshots recorded at specific intervals. Data fromat is in ASCII and txt. Each file consists of 20,480 points with the sampling rate set at 20 kHz - *University of Cincinnati., Center for Intelligent Maintenance Systems (IMS)*
 
 ## Aerospace Text Data for NLP applications
@@ -25,7 +25,7 @@ A list of awesome and diverse datasets related to space vehicle engineering for 
 - More NLP data to come
 
 ## Astrodynamics
-- [**Pose Estimation Challenge 2021**](https://kelvins.esa.int/pose-estimation-2021/home/) - **15.7 GB - Regression Task** <mark>highlight</mark>
+- [**Pose Estimation Challenge 2021**](https://kelvins.esa.int/pose-estimation-2021/home/) - **15.7 GB - Regression Task**
   - Can you predict the position and orientation of our spacecraft in realistic images while only being provided with labels from computer generated examples? The new challenge SPEC2021 is explicitly designed to investigate the domain gap between synthetic labelled and realistic unlabelled images. Conducting this challenge will shed more light on the next big question for spaceborne computer vision algorithms: how can one validate on-ground the pose estimation algorithm on spaceborne image targets that are simply unavailable prior to the mission? After all, unlike on Earth, autonomous driving in space prohibits habitual road tests and on-site debugging. You may also want to look at the dataset of the previous Pose Estimation Challenge from 2019 ([here](https://kelvins.esa.int/satellite-pose-estimation-challenge/)) - Data provided are .json (filenames) and images 8 bit monochrome in jpeg format, with a resolution of 1920×1200 pixels - *Advanced Concepts Team (ESA) + Space Rendezvous Laboratory (SLAB) of Stanford University, 2021*
 
 - [**Space Debris: the origin**](https://kelvins.esa.int/space-debris-the-origin/home/) - **< 3 MB - Multi-Task: Classification + Regression**
