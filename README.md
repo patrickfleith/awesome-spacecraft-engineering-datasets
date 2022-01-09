@@ -41,6 +41,15 @@ A list of awesome and diverse datasets related to space vehicle engineering for 
 - [**Small Satellite Power Simulation Dataset**](https://ti.arc.nasa.gov/tech/dash/groups/pcoe/prognostic-data-repository/#smallsat) - **5 MB - Prognosis**
   - Data collected from the simulated experiments on small satellite BP930 batteries using the MACCOR system. Reference document can be dowloaded [here](https://ti.arc.nasa.gov//m/project/prognostic-repository/Description_of_Simulated_Small_Satellite_Operation_Data_Sets.pdf). The power cycle reference sheet can be dowloaded [here](https://ti.arc.nasa.gov//m/project/prognostic-repository/Simulated_Current_Draw_Profile.xlsx). MATLAB file (.mat) and excel spreadsheet (.xlsx), *Z. Cameron, C. Kulkarni , A. Guarneros, K. Goebel, S. Poll, NASA Ames*
 
+- [**Capacitor Electrical Stress Data Set**](https://ti.arc.nasa.gov/tech/dash/groups/pcoe/prognostic-data-repository/#escapacitor) - **4.8 GB - Prognosis**
+  - Capacitors were subjected to electrical stress under three voltage levels i.e 10V, 12V and 14V. Data Set contains EIS data as well as Charge/Discharge Signal data. DataSet Reference document can be downloaded [here](http://ti.arc.nasa.gov/m/project/prognostic-repository/Description%20of%20Electrolytic%20Capacitors%20under%20Electrical%20Overstress%20Data%20Sets.pdf), The dataset is in .mat format and has been zipped. *J. Renwick, C. Kulkarni, and J Celaya, NASA Ames Research Center*
+
+- [**Capacitor Electrical Stress Data Set - 2**](https://ti.arc.nasa.gov/tech/dash/groups/pcoe/prognostic-data-repository/#eoscapacitor) - **1 kB - Prognosis**
+  - Capacitors were subjected to electrical stress at 10V. DataSet Reference document can be downloaded [here](http://ti.arc.nasa.gov/m/project/prognostic-repository/Electrolytic%20Capacitors%20under%20Electrical%20Overstress%20Data%20Sets.pdf), The dataset is in .mat format and has been zipped. *J. Celaya, C. Kulkarni, G. Biswas, and K. Goebel, NASA Ames Research Center*
+
+- [**MOSFET Thermal Overstress Aging Data Set**](https://ti.arc.nasa.gov/tech/dash/groups/pcoe/prognostic-data-repository/#mosfet) - **7.3 GB - Prognosis**
+  - Run-to-failure experiments on Power MOSFETs under thermal overstress. DataSet Reference document can be downloaded [here](http://ti.arc.nasa.gov/m/project/prognostic-repository/MOSFET%20Thermal%20Overstress%20Aging%20Document.pdf), The dataset is in .mat format and has been zipped. *J. R. Celaya, A. Saxena, S. Saha, and K. Goebel, NASA Ames Research Center*
+  
 ## Aerospace Text Data for NLP applications
 
 - [**Aeronautics & Astronautics Abstracts**](https://www.kaggle.com/sylar68/aeronautics-astronautics-journal-abstracts) - **< 1MB - Text Classification**
