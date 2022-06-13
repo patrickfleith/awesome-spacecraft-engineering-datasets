@@ -1,18 +1,42 @@
 # Awesome Spacecraft Engineering Datasets [![Awesome](https://awesome.re/badge-flat.svg)](https://awesome.re)
 A list of awesome and diverse datasets related to space vehicle engineering for industry and research.
 
-## Engineering Datasets
+## Engineering Datasets for Regression
 - [**Spacecraft Thruster Firing Test Dataset**](https://www.kaggle.com/sylar68/spacecraft-thruster-firing-test-dataset) - **1 GB - Regression Task**
   - Time series analysis and predictive modelling of engine thrust, mass flow rate, and performance degradation over time. This is a synthetic dataset based on the real-world physics of a chemical reaction control thruster. Time series data in .csv files, *(Patrick Fleith, 2021)*
  
 - [**Mars Express Challenge**](https://kelvins.esa.int/mars-express-power-challenge/home/) - **150 MB - Regression Task**
   - Predict the average current consumption of 33 thermal power lines per hour of the mission's fourth Martian year (2014-04-14 to 2016-03-01), Time series are in .csv files, *Advanced Concepts Team, European Space Agency, 2021*
+  
+- [**NASA Airfoil Self-Noise Data Set**](https://archive.ics.uci.edu/ml/datasets/airfoil+self-noise) - **< 1MB - Regression Task**
+  - The NASA data set is obtained from a series of aerodynamic and acoustic tests of two and three-dimensional airfoil blade sections conducted in an anechoic wind tunnel. The span of the airfoil and the observer position were the same in all of the experiments. The objective is to predict the aerofoil noise (the scale sound pressure level), *Thomas F. Brooks, D. Stuart Pope and Michael A. Marcolini (NASA), Donor: Dr. Roberto Lopez*
+
+## Engineering Datasets for Classification
 
 - [**Mars Surface and Curiosity Image Set**](https://www.kaggle.com/brsdincer/mars-surface-and-curiosity-image-set-nasa) - **3.24 GB - Multioutput Image Classification**
   - This data set consists of 6691 images that were collected by the Mars Science Laboratory (MSL, Curosity) rover by three instruments (Mastcam Right eye, Mastcam Left eye, and MAHLI). The proposed task is a multiple output classification model. An on-board classifier would make it possible to prioritise which images are sent back to Earth earlier than the others; 6691 images of roughly 256x256 in .jpg format, *Alice Stanboli and Kiri L. Wagstaff, NASA*
 
-- [**NASA Airfoil Self-Noise Data Set**](https://archive.ics.uci.edu/ml/datasets/airfoil+self-noise) - **< 1MB - Regression Task**
-  - The NASA data set is obtained from a series of aerodynamic and acoustic tests of two and three-dimensional airfoil blade sections conducted in an anechoic wind tunnel. The span of the airfoil and the observer position were the same in all of the experiments. The objective is to predict the aerofoil noise (the scale sound pressure level), *Thomas F. Brooks, D. Stuart Pope and Michael A. Marcolini (NASA), Donor: Dr. Roberto Lopez*
+- [**Statlog (Landsat Satellite) Data Set**](https://archive.ics.uci.edu/ml/datasets/Statlog+(Landsat+Satellite)) - **< 1MB - Classification**
+  - The dataset consists of the multi-spectral values of pixels in 3x3 neighbourhoods in a satellite image, and the classification associated with the central pixel in each neighbourhood. The aim is to predict this classification, given the multi-spectral values. In the sample database, the class of a pixel is coded as a number. - 2 ASCII files sat.trn and sat.tst - *Ashwin Srinivasan (1993), University of Strathclyde*
+
+## Engineering Datasets for Outliers & Anomalies Detection
+
+- [**SMAP & MSL Dataset**](https://www.kaggle.com/patrickfleith/datasets) - **~ 250 MB - Anomaly/Novelty Detection COMING SOON** 
+  - This dataset contains expert-labeled telemetry anomaly data from the Soil Moisture Active Passive (SMAP) satellite and the Mars Science Laboratory (MSL) rover, Curiosity. Indications of telemetry anomalies can be found within previously mentioned ISA reports.
+All telemetry channels discussed in an individual ISA were reviewed to ensure that the anomaly was evident in the associated telemetry data, and specific anomalous time ranges were manually labeled for each channel. If multiple anomalous sequences and channels closely resembled each other, only one was kept for the experiment in order to create a diverse and balanced set. Anomalies were classified into two categories, point and contextual, to distinguish between anomalies that would likely be identified by properly-set alarms or distance-based methods that ignore tem- poral information (point anomalies) and those that require more complex methodologies such as LSTMs or Hierarchical Temporal Memory (HTM) approaches to detect (contextual anomalies), **SMAP**: TM Channels (55), Total TM values (429,735), Total anomalies (69), **MSL**: TM Channels (27), Total TM values (66,709), Total anomalies (36)- Data in .npy files - *Kyle Hundman et al. 2018, NASA Jet Propulsion Laboratory*
+
+- [**LASP Spacecraft Telemtry**](https://github.com/sapols/Satellite-Telemetry-Anomaly-Detection) - **14 MB - Outliers Detection**
+  - This dataset can be used for visualization and analysis of telemetry data that is built and maintained at the Laboratory for Atmospheric and Space Physics. Read more [here](https://github.com/sapols/Satellite-Telemetry-Anomaly-Detection/blob/master/Paper/Unsupervised%20Machine%20Learning%20for%20Spacecraft%20Anomaly%20Detection%20in%20WebTCAD.pdf) - Data in .csv files, no ground truth - *Shawn Polson, Laboratory for Atmospheric and Space Physics*
+
+- [**Satellite dataset (from Statlog)**](http://odds.cs.stonybrook.edu/satellite-dataset/) - **< 1MB - Outliers Detection**
+  - The original Statlog (Landsat Satellite) dataset from UCI machine learning repository is a multi-class classification dataset. Here, the training and test data are combined. The smallest three classes, i.e. 2, 4, 5 are combined to form the outliers class, while all the other classes are combined to form an inlier class, - Data in .mat file, X = Multi-dimensional point data, y = labels (1 = outliers, 0 = inliers), *Adapted from Ashwin Srinivasan (1993),
+University of Strathclyde*
+
+- [**satimage-2 dataset (from Statlog)**](http://odds.cs.stonybrook.edu/satimage-2-dataset/) - **< 1MB - Outliers Detection**
+  - The original Statlog (Landsat Satellite) dataset from UCI machine learning repository is a multi-class classification dataset. Here, the training and test data are combined. Class 2 is down-sampled to 71 outliers, while all the other classes are combined to form an inlier class. The modified dataset is referred to as Satimage-2. Data in .mat file, X = Multi-dimensional point data, y = labels (1 = outliers, 0 = inliers), *Adapted from Ashwin Srinivasan (1993),
+University of Strathclyde*
+
+## Engineering Datasets for Prognosis
 
 - [**NASA Bearing Dataset**](https://www.kaggle.com/vinayak123tyagi/bearing-dataset) - **6.08 GB - Prognosis for Predictive / Preventive Maintenance**
   - Four bearings were installed on a shaft. Three (3) data sets are included in the data packet. Each data set describes a test-to-failure experiment. Each data set consists of individual files that are 1-second vibration signal snapshots recorded at specific intervals. Data fromat is in ASCII and txt. Each file consists of 20,480 points with the sampling rate set at 20 kHz - *University of Cincinnati., Center for Intelligent Maintenance Systems (IMS)*
