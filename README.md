@@ -52,10 +52,19 @@ A list of awesome and diverse datasets related to space vehicle engineering for 
   
 ## Aerospace Text Data for NLP applications
 
+- [**Dataset of space systems corpora**](https://pureportal.strath.ac.uk/en/datasets/dataset-of-space-systems-corpora-thesis-data) - **257 MB - Natural Language Processing**
+  - The dataset contains several corpora used to train the methods developed in the thesis "Text Mining and Natural Language Processing for the Early Stages of Space Mission Design". The dataset includes 4,991 articles published in the Acta Astronautica, the Advance in Space Research (ASR), and the Aerospace Science and Technology (AST) journals, 39 books related to space mission design and 242 Wikipedia pages processed with a space domain-specific Natural Language Processing pipeline. Additional text sources are 27,016 parsed ECSS requirements extracted from 126 active standards. The mission requirements are extracted from two ESA documents, publicly available, the SMOS mission System Requirement Document and MarcoPolo-R's Mission Requirement Document - Data in .txt and .json files - *Audrey Berquand, Annalisa Riccardi (2021), University of Strathclyde*
+
+- [**Space News Dataset**](https://www.kaggle.com/datasets/patrickfleith/space-news-dataset) - **79 MB - Natural Language Processing**
+  - This dataset contains the title, url, text content, author, publish data, and post excerpt of more than 17,400 english news articles related to the space industry, a total of 13.1 million tokens (words) which makes it perfect to train language models specific to the space industry ecosystem. It covers agency news, commercial, civil, launches, military, and also opinion articles from [spacenews](https://spacenews.com/) - Data are in .csv files.
+
+- [**International Astronatucial Federation**](https://www.iafastro.org/) - **COMING SOON**
+  - This dataset contains more than 30,000 abstracts of congress articles submitted to the IAF (International Astronautical Federation). This is equivalent to (>6 million words), *(Patrick Fleith, 2022)*
+
 - [**Aeronautics & Astronautics Abstracts**](https://www.kaggle.com/sylar68/aeronautics-astronautics-journal-abstracts) - **< 1MB - Text Classification**
   - The Aeronautics & Astronautics Abstracts dataset includes titles and abstracts of about 493 papers published by AIAA either in the journal of propulsion and power (JPP), or in the journal of thermophysics and heat transfers (JTHT) which were manually retrieved from https://arc.aiaa.org. The task is to build a classifier that is able to distinguish between abstracts and/or titles from each specific technical domain. The challenge lies in that both domains (propulsion, heat transfers) contains vocabulary that overlaps such as (combustion, exchange, thermal, fluid, etc…) which makes it harder to distinguish which journal it comes from. All is in an excel file (.xls), *(Patrick Fleith, 2021)*
-  
-- More NLP data to come
+
+- We are constantly working towards more NLP4space data
 
 ## Astrodynamics
 - [**Pose Estimation Challenge 2021**](https://kelvins.esa.int/pose-estimation-2021/home/) - **15.7 GB - Regression Task**
