@@ -21,7 +21,7 @@ A list of awesome and diverse datasets related to space vehicle engineering for 
 
 ## Engineering Datasets for Outliers & Anomalies Detection
 
-- [**SMAP & MSL Dataset**](https://www.kaggle.com/datasets/patrickfleith/nasa-anomaly-detection-dataset-smap-msl) - **~ 250 MB - Anomaly/Novelty Detection COMING SOON** 
+- [**SMAP & MSL Dataset**](https://www.kaggle.com/datasets/patrickfleith/nasa-anomaly-detection-dataset-smap-msl) - **~ 250 MB - Anomaly/Novelty Detection** 
   - This dataset contains expert-labeled telemetry anomaly data from the Soil Moisture Active Passive (SMAP) satellite and the Mars Science Laboratory (MSL) rover, Curiosity. Indications of telemetry anomalies can be found within previously mentioned ISA reports.
 All telemetry channels discussed in an individual ISA were reviewed to ensure that the anomaly was evident in the associated telemetry data, and specific anomalous time ranges were manually labeled for each channel. If multiple anomalous sequences and channels closely resembled each other, only one was kept for the experiment in order to create a diverse and balanced set. Anomalies were classified into two categories, point and contextual, to distinguish between anomalies that would likely be identified by properly-set alarms or distance-based methods that ignore tem- poral information (point anomalies) and those that require more complex methodologies such as LSTMs or Hierarchical Temporal Memory (HTM) approaches to detect (contextual anomalies), **SMAP**: TM Channels (55), Total TM values (429,735), Total anomalies (69), **MSL**: TM Channels (27), Total TM values (66,709), Total anomalies (36)- Data in .npy files - *Kyle Hundman et al. 2018, NASA Jet Propulsion Laboratory*
 
@@ -47,15 +47,15 @@ University of Strathclyde*
 - [**NASA Milling Dataset**](https://www.kaggle.com/datasets/vinayak123tyagi/milling-data-set-prognostic-data) - **72.6 MB - Regression / Prognosis**
   - Can you predict the flank wear VB [mm], i.e. the wearing of the miling insert after sone runs? Experiments on a milling machine for different speeds, feeds, and depth of cut. Records the wear of the milling insert, VB. The dataset is in .mat format and has been zipped. A Readme.pdf provides details on the experimental protocol and the measurement technics. *A. Agogino and K. Goebel (2007). BEST lab, UC Berkeley*
 
-- [**PRONOSTIA Bearings Accelerated Degradation Tests Dataset**](https://www.kaggle.com/datasets/patrickfleith/pronostia-bearings-accelerated-degradation-tests) - **2 GB - Prognosis**
-  - Experiments on bearings' accelerated life tests, *P. Nectoux, R. Gouriveau, K. Medjaher, E. Ramasso, B. Morello, N. Zerhouni, C. Varnier, FEMTO-ST Institute, Besançon, France, NASA Ames Research Center*
+- [**FEMTO Bearings Accelerated Degradation Tests Dataset**](https://www.nasa.gov/content/prognostics-center-of-excellence-data-set-repository) - **2 GB - Prognosis**
+  - Experiments on bearings' accelerated life tests provided by FEMTO-ST Institute, Besançon, France., *P. Nectoux, R. Gouriveau, K. Medjaher, E. Ramasso, B. Morello, N. Zerhouni, C. Varnier, FEMTO-ST Institute, Besançon, France, NASA Ames Research Center*
 
-- [**Randomized Battery Usage Dataset**](https://www.kaggle.com/datasets/patrickfleith/nasa-randomized-battery-usage-dataset) **1.12 GB  - Prognosis**
+- [**Randomized Battery Usage Dataset**](https://www.nasa.gov/content/prognostics-center-of-excellence-data-set-repository) **1.12 GB  - Prognosis**
   - Batteries are continuously cycled with randomly generated current profiles. Reference charging and discharging cycles are also performed after a fixed interval of randomized usage in order to provide reference benchmarks for battery state of health. *B. Bole, C. Kulkarni, and M. Daigle, NASA Ames Research Center*
 
 
-- [**Small Satellite Power Simulation Dataset**](https://www.kaggle.com/datasets/patrickfleith/small-satellite-power-simulation-dataset) - **5 MB - Prognosis**
-  - Data collected from the simulated experiments on small satellite BP930 batteries using the MACCOR system. Reference document can be dowloaded [here](https://ti.arc.nasa.gov//m/project/prognostic-repository/Description_of_Simulated_Small_Satellite_Operation_Data_Sets.pdf). The power cycle reference sheet can be dowloaded [here](https://ti.arc.nasa.gov//m/project/prognostic-repository/Simulated_Current_Draw_Profile.xlsx). MATLAB file (.mat) and excel spreadsheet (.xlsx), *Z. Cameron, C. Kulkarni , A. Guarneros, K. Goebel, S. Poll, NASA Ames*
+- [**Small Satellite Power Simulation Dataset**](https://www.kaggle.com/datasets/patrickfleith/nasa-randomized-battery-usage-dataset) - **5 MB - Prognosis**
+  - Data collected from the simulated experiments on small satellite BP930 batteries using the MACCOR system. Data as provided by NASA is currently unavailable for download directly. NASA is working to restore direct download capabilities. In the meantime, if you would like access to the data, please contact christopher.a.teubert@nasa.gov or you can download previous version on kaggle [here](https://www.kaggle.com/datasets/patrickfleith/nasa-randomized-battery-usage-dataset). MATLAB file (.mat) and excel spreadsheet (.xlsx), *Z. Cameron, C. Kulkarni , A. Guarneros, K. Goebel, S. Poll, NASA Ames*
   
 ## Aerospace Text Data for NLP applications
 
@@ -100,30 +100,33 @@ University of Strathclyde*
 - [**Kepler Exoplanet Search Results**](https://www.kaggle.com/nasa/kepler-exoplanet-search-results) - **989 MB - Exploratory Data Analysis** 
   - This dataset is a cumulative record of all observed Kepler "objects of interest" — basically, all of the approximately 10,000 exoplanet candidates Kepler has taken observations on. You can access the original table [here](https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=koi):  More data from the Kepler mission is available from the same [source](https://exoplanetarchive.ipac.caltech.edu/docs/data.html). Inspiration for anlysis: How often are exoplanets confirmed in the existing literature disconfirmed by measurements from Kepler? How about the other way round? What general characteristics about exoplanets (that we can find) can you derive from this dataset? What exoplanets get assigned names in the literature? What is the distribution of confidence scores?
 
+
 - [**Grav2Net**](https://www.kaggle.com/c/g2net-gravitational-wave-detection/overview) - **72 GB - Binary Classification** 
   - You are provided with a training set of time series data containing simulated gravitational wave measurements from a network of 3 gravitational wave interferometers (LIGO Hanford, LIGO Livingston, and Virgo). Each time series contains either detectornoise or detector noise plus a simulated gravitational wave signal. The task is to identify when a signal is present from the mergers of binary black holes; Each data sample (npy file) contains 3 time series (1 for each detector) and each spans 2 sec and is sampled at 2,048 Hz. *European Gravitational Observatory - EGO, 2015*
 
 
+- [**G2Net 2 - Detecting Continuous Gravitational Waves**](https://www.kaggle.com/competitions/g2net-detecting-continuous-gravitational-waves/overview) - **227.1 GB - Binary Classification**
+  - This is a follow-up competition of the Grav2Net one. The goal of this competition is to find continuous gravitational-wave signals. You will develop a model sensitive enough to detect weak yet long-lasting signals emitted by rapidly-spinning neutron stars within noisy data.
 
 
 ## Currently Not Available !
 
 *these datasets are currently not available, broken links, or removed by the authors :'(*
 
-- [**CFRP Composites Dataset**](https://ti.arc.nasa.gov/tech/dash/groups/pcoe/prognostic-data-repository/#composites) - **4.5 GB - Expected End-of-life Prediction**
+- [**CFRP Composites Dataset**](https://www.nasa.gov/content/prognostics-center-of-excellence-data-set-repository) - **4.5 GB - Expected End-of-life Prediction**
   - Run-to-failure experiments were run on CFRP panels with periodic measurements to capture internal damage growth under tension-tension fatigue. Monitoring data consist of lamb wave signals from a network of 16 piezoelectric (PZT) sensors and multiple triaxial strain gages. Additionally, periodic x-rays were taken to characterize internal damage as ground truth information. Three different layups were tested. Dataset is organized into three zipped folders each containing data from coupons of single layup type and includes a readme file, and a folder with reports and papers published from this dataset. *Abhinav Saxena, Kai Goebel, Cecilia C. Larrosa, and Fu-Kuo Chang. Experiments were conducted at Stanford Structures and Composites Laboratory (SACL) in collaboration with the Prognostic Center of Excellence (PCoE) of NASA Ames Research Center.*
 
-- [**Turbofan Engine Degradation Simulation Data Set**](https://ti.arc.nasa.gov/tech/dash/groups/pcoe/prognostic-data-repository/#turbofan) - **45.3 MB - Prognosis**
+- [**Turbofan Engine Degradation Simulation Data Set**](https://www.nasa.gov/content/prognostics-center-of-excellence-data-set-repository) - **45.3 MB - Prognosis**
   - Engine degradation simulation was carried out using C-MAPSS. Four different were sets simulated under different combinations of operational conditions and fault modes. Records several sensor channels to characterize fault evolution. The dataset is in text format and has been zipped including a readme file, and an original paper describing damage propagation modeling. *A. Saxena and K. Goebel (2008), Prognostics CoE at NASA Ames.*
 
-- [**Turbofan Engine Degradation Simulation Dataset-2**](https://ti.arc.nasa.gov/tech/dash/groups/pcoe/prognostic-data-repository/#turbofan-2) - **14.8 GB - Prognosis**
+- [**Turbofan Engine Degradation Simulation Dataset-2**](https://www.nasa.gov/content/prognostics-center-of-excellence-data-set-repository) - **14.8 GB - Prognosis**
   - The generation of data-driven prognostics models requires the availability of datasets with run-to-failure trajectories. In order to contribute to the development of these methods, the dataset provides a new realistic dataset of run-to-failure trajectories for a small fleet of aircraft engines under realistic flight conditions. The damage propagation modelling used for the generation of this synthetic dataset builds on the modeling strategy from previous work . The dataset was generated with the Commercial Modular Aero-Propulsion System Simulation (C-MAPSS) dynamical model. The data set is been provided by the Prognostics CoE at NASA Ames in collaboration with ETH Zurich and PARC. Readme file for the dataset describing the experimetal details and data can be found [here](https://ti.arc.nasa.gov/m/project/prognostic-repository/Run_to_Failure_Simulation_Under_Real_Flight_Conditions_Dataset.pdf). The dataset is in csv format and has been zipped. A python code to unzip the files can be found [here](https://ti.arc.nasa.gov/m/project/prognostic-repository/N-CMAPSS_Example_data_loading_and_exploration.ipynb). *M. Chao, C.Kulkarni, K. Goebel and O. Fink (2021), NASA Ames and ETH Zurich*
 
-- [**Capacitor Electrical Stress Data Set**](https://ti.arc.nasa.gov/tech/dash/groups/pcoe/prognostic-data-repository/#escapacitor) - **4.8 GB - Prognosis**
+- [**Capacitor Electrical Stress Data Set**](https://www.nasa.gov/content/prognostics-center-of-excellence-data-set-repository) - **4.8 GB - Prognosis**
   - Capacitors were subjected to electrical stress under three voltage levels i.e 10V, 12V and 14V. Data Set contains EIS data as well as Charge/Discharge Signal data. DataSet Reference document can be downloaded [here](http://ti.arc.nasa.gov/m/project/prognostic-repository/Description%20of%20Electrolytic%20Capacitors%20under%20Electrical%20Overstress%20Data%20Sets.pdf), The dataset is in .mat format and has been zipped. *J. Renwick, C. Kulkarni, and J Celaya, NASA Ames Research Center*
 
-- [**Capacitor Electrical Stress Data Set - 2**](https://ti.arc.nasa.gov/tech/dash/groups/pcoe/prognostic-data-repository/#eoscapacitor) - **1 kB - Prognosis**
+- [**Capacitor Electrical Stress Data Set - 2**](https://www.nasa.gov/content/prognostics-center-of-excellence-data-set-repository) - **1 kB - Prognosis**
   - Capacitors were subjected to electrical stress at 10V. DataSet Reference document can be downloaded [here](http://ti.arc.nasa.gov/m/project/prognostic-repository/Electrolytic%20Capacitors%20under%20Electrical%20Overstress%20Data%20Sets.pdf), The dataset is in .mat format and has been zipped. *J. Celaya, C. Kulkarni, G. Biswas, and K. Goebel, NASA Ames Research Center*
 
-- [**MOSFET Thermal Overstress Aging Data Set**](https://ti.arc.nasa.gov/tech/dash/groups/pcoe/prognostic-data-repository/#mosfet) - **7.3 GB - Prognosis**
+- [**MOSFET Thermal Overstress Aging Data Set**](https://www.nasa.gov/content/prognostics-center-of-excellence-data-set-repository) - **7.3 GB - Prognosis**
   - Run-to-failure experiments on Power MOSFETs under thermal overstress. DataSet Reference document can be downloaded [here](http://ti.arc.nasa.gov/m/project/prognostic-repository/MOSFET%20Thermal%20Overstress%20Aging%20Document.pdf), The dataset is in .mat format and has been zipped. *J. R. Celaya, A. Saxena, S. Saha, and K. Goebel, NASA Ames Research Center*
