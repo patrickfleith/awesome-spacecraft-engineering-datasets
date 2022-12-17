@@ -36,6 +36,24 @@ University of Strathclyde*
   - The original Statlog (Landsat Satellite) dataset from UCI machine learning repository is a multi-class classification dataset. Here, the training and test data are combined. Class 2 is down-sampled to 71 outliers, while all the other classes are combined to form an inlier class. The modified dataset is referred to as Satimage-2. Data in .mat file, X = Multi-dimensional point data, y = labels (1 = outliers, 0 = inliers), *Adapted from Ashwin Srinivasan (1993),
 University of Strathclyde*
 
+
+## Space Text Data for NLP applications
+
+- [**Dataset of space systems corpora**](https://pureportal.strath.ac.uk/en/datasets/dataset-of-space-systems-corpora-thesis-data) - **257 MB - Natural Language Processing**
+  - The dataset contains several corpora used to train the methods developed in the thesis "Text Mining and Natural Language Processing for the Early Stages of Space Mission Design". The dataset includes 4,991 articles published in the Acta Astronautica, the Advance in Space Research (ASR), and the Aerospace Science and Technology (AST) journals, 39 books related to space mission design and 242 Wikipedia pages processed with a space domain-specific Natural Language Processing pipeline. Additional text sources are 27,016 parsed ECSS requirements extracted from 126 active standards. The mission requirements are extracted from two ESA documents, publicly available, the SMOS mission System Requirement Document and MarcoPolo-R's Mission Requirement Document - Data in .txt and .json files - *Audrey Berquand, Annalisa Riccardi (2021), University of Strathclyde*
+
+- [**Space News Dataset**](https://www.kaggle.com/datasets/patrickfleith/space-news-dataset) - **79 MB - Natural Language Processing**
+  - This dataset contains the title, url, text content, author, publish data, and post excerpt of more than 17,400 english news articles related to the space industry, a total of 13.1 million tokens (words) which makes it perfect to train language models specific to the space industry ecosystem. It covers agency news, commercial, civil, launches, military, and also opinion articles from [spacenews](https://spacenews.com/) - Data are in .csv files.
+
+- [**International Astronatucial Federation**](https://www.iafastro.org/) - **COMING SOON**
+  - This dataset contains more than 30,000 abstracts of congress articles submitted to the IAF (International Astronautical Federation). This is equivalent to (>6 million words), *(Patrick Fleith, 2022)*
+
+- [**Aeronautics & Astronautics Abstracts**](https://www.kaggle.com/sylar68/aeronautics-astronautics-journal-abstracts) - **< 1MB - Text Classification**
+  - The Aeronautics & Astronautics Abstracts dataset includes titles and abstracts of about 493 papers published by AIAA either in the journal of propulsion and power (JPP), or in the journal of thermophysics and heat transfers (JTHT) which were manually retrieved from https://arc.aiaa.org. The task is to build a classifier that is able to distinguish between abstracts and/or titles from each specific technical domain. The challenge lies in that both domains (propulsion, heat transfers) contains vocabulary that overlaps such as (combustion, exchange, thermal, fluid, etc…) which makes it harder to distinguish which journal it comes from. All is in an excel file (.xls), *(Patrick Fleith, 2021)*
+
+- We are constantly working towards more NLP4space data
+
+
 ## Engineering Datasets for Prognosis
 
 - [**NASA Bearing Dataset**](https://www.kaggle.com/vinayak123tyagi/bearing-dataset) - **6.08 GB - Prognosis for Predictive / Preventive Maintenance**
@@ -56,22 +74,25 @@ University of Strathclyde*
 
 - [**Small Satellite Power Simulation Dataset**](https://www.kaggle.com/datasets/patrickfleith/nasa-randomized-battery-usage-dataset) - **5 MB - Prognosis**
   - Data collected from the simulated experiments on small satellite BP930 batteries using the MACCOR system. Data as provided by NASA is currently unavailable for download directly. NASA is working to restore direct download capabilities. In the meantime, if you would like access to the data, please contact christopher.a.teubert@nasa.gov or you can download previous version on kaggle [here](https://www.kaggle.com/datasets/patrickfleith/nasa-randomized-battery-usage-dataset). MATLAB file (.mat) and excel spreadsheet (.xlsx), *Z. Cameron, C. Kulkarni , A. Guarneros, K. Goebel, S. Poll, NASA Ames*
-  
-## Aerospace Text Data for NLP applications
 
-- [**Dataset of space systems corpora**](https://pureportal.strath.ac.uk/en/datasets/dataset-of-space-systems-corpora-thesis-data) - **257 MB - Natural Language Processing**
-  - The dataset contains several corpora used to train the methods developed in the thesis "Text Mining and Natural Language Processing for the Early Stages of Space Mission Design". The dataset includes 4,991 articles published in the Acta Astronautica, the Advance in Space Research (ASR), and the Aerospace Science and Technology (AST) journals, 39 books related to space mission design and 242 Wikipedia pages processed with a space domain-specific Natural Language Processing pipeline. Additional text sources are 27,016 parsed ECSS requirements extracted from 126 active standards. The mission requirements are extracted from two ESA documents, publicly available, the SMOS mission System Requirement Document and MarcoPolo-R's Mission Requirement Document - Data in .txt and .json files - *Audrey Berquand, Annalisa Riccardi (2021), University of Strathclyde*
+- [**CFRP Composites Dataset**](https://www.nasa.gov/content/prognostics-center-of-excellence-data-set-repository) - **4.5 GB - Expected End-of-life Prediction**
+  - Run-to-failure experiments were run on CFRP panels with periodic measurements to capture internal damage growth under tension-tension fatigue. Monitoring data consist of lamb wave signals from a network of 16 piezoelectric (PZT) sensors and multiple triaxial strain gages. Additionally, periodic x-rays were taken to characterize internal damage as ground truth information. Three different layups were tested. Dataset is organized into three zipped folders each containing data from coupons of single layup type and includes a readme file, and a folder with reports and papers published from this dataset. *Abhinav Saxena, Kai Goebel, Cecilia C. Larrosa, and Fu-Kuo Chang. Experiments were conducted at Stanford Structures and Composites Laboratory (SACL) in collaboration with the Prognostic Center of Excellence (PCoE) of NASA Ames Research Center.*
 
-- [**Space News Dataset**](https://www.kaggle.com/datasets/patrickfleith/space-news-dataset) - **79 MB - Natural Language Processing**
-  - This dataset contains the title, url, text content, author, publish data, and post excerpt of more than 17,400 english news articles related to the space industry, a total of 13.1 million tokens (words) which makes it perfect to train language models specific to the space industry ecosystem. It covers agency news, commercial, civil, launches, military, and also opinion articles from [spacenews](https://spacenews.com/) - Data are in .csv files.
+- [**Turbofan Engine Degradation Simulation Data Set**](https://www.nasa.gov/content/prognostics-center-of-excellence-data-set-repository) - **45.3 MB - Prognosis**
+  - Engine degradation simulation was carried out using C-MAPSS. Four different were sets simulated under different combinations of operational conditions and fault modes. Records several sensor channels to characterize fault evolution. The dataset is in text format and has been zipped including a readme file, and an original paper describing damage propagation modeling. *A. Saxena and K. Goebel (2008), Prognostics CoE at NASA Ames.*
 
-- [**International Astronatucial Federation**](https://www.iafastro.org/) - **COMING SOON**
-  - This dataset contains more than 30,000 abstracts of congress articles submitted to the IAF (International Astronautical Federation). This is equivalent to (>6 million words), *(Patrick Fleith, 2022)*
+- [**Turbofan Engine Degradation Simulation Dataset-2**](https://www.nasa.gov/content/prognostics-center-of-excellence-data-set-repository) - **14.8 GB - Prognosis**
+  - The generation of data-driven prognostics models requires the availability of datasets with run-to-failure trajectories. In order to contribute to the development of these methods, the dataset provides a new realistic dataset of run-to-failure trajectories for a small fleet of aircraft engines under realistic flight conditions. The damage propagation modelling used for the generation of this synthetic dataset builds on the modeling strategy from previous work . The dataset was generated with the Commercial Modular Aero-Propulsion System Simulation (C-MAPSS) dynamical model. The data set is been provided by the Prognostics CoE at NASA Ames in collaboration with ETH Zurich and PARC. Readme file for the dataset describing the experimetal details and data can be found [here](https://ti.arc.nasa.gov/m/project/prognostic-repository/Run_to_Failure_Simulation_Under_Real_Flight_Conditions_Dataset.pdf). The dataset is in csv format and has been zipped. A python code to unzip the files can be found [here](https://ti.arc.nasa.gov/m/project/prognostic-repository/N-CMAPSS_Example_data_loading_and_exploration.ipynb). *M. Chao, C.Kulkarni, K. Goebel and O. Fink (2021), NASA Ames and ETH Zurich*
 
-- [**Aeronautics & Astronautics Abstracts**](https://www.kaggle.com/sylar68/aeronautics-astronautics-journal-abstracts) - **< 1MB - Text Classification**
-  - The Aeronautics & Astronautics Abstracts dataset includes titles and abstracts of about 493 papers published by AIAA either in the journal of propulsion and power (JPP), or in the journal of thermophysics and heat transfers (JTHT) which were manually retrieved from https://arc.aiaa.org. The task is to build a classifier that is able to distinguish between abstracts and/or titles from each specific technical domain. The challenge lies in that both domains (propulsion, heat transfers) contains vocabulary that overlaps such as (combustion, exchange, thermal, fluid, etc…) which makes it harder to distinguish which journal it comes from. All is in an excel file (.xls), *(Patrick Fleith, 2021)*
+- [**Capacitor Electrical Stress Data Set**](https://www.nasa.gov/content/prognostics-center-of-excellence-data-set-repository) - **4.8 GB - Prognosis**
+  - Capacitors were subjected to electrical stress under three voltage levels i.e 10V, 12V and 14V. Data Set contains EIS data as well as Charge/Discharge Signal data. DataSet Reference document can be downloaded [here](http://ti.arc.nasa.gov/m/project/prognostic-repository/Description%20of%20Electrolytic%20Capacitors%20under%20Electrical%20Overstress%20Data%20Sets.pdf), The dataset is in .mat format and has been zipped. *J. Renwick, C. Kulkarni, and J Celaya, NASA Ames Research Center*
 
-- We are constantly working towards more NLP4space data
+- [**Capacitor Electrical Stress Data Set - 2**](https://www.nasa.gov/content/prognostics-center-of-excellence-data-set-repository) - **1 kB - Prognosis**
+  - Capacitors were subjected to electrical stress at 10V. DataSet Reference document can be downloaded [here](http://ti.arc.nasa.gov/m/project/prognostic-repository/Electrolytic%20Capacitors%20under%20Electrical%20Overstress%20Data%20Sets.pdf), The dataset is in .mat format and has been zipped. *J. Celaya, C. Kulkarni, G. Biswas, and K. Goebel, NASA Ames Research Center*
+
+- [**MOSFET Thermal Overstress Aging Data Set**](https://www.nasa.gov/content/prognostics-center-of-excellence-data-set-repository) - **7.3 GB - Prognosis**
+  - Run-to-failure experiments on Power MOSFETs under thermal overstress. DataSet Reference document can be downloaded [here](http://ti.arc.nasa.gov/m/project/prognostic-repository/MOSFET%20Thermal%20Overstress%20Aging%20Document.pdf), The dataset is in .mat format and has been zipped. *J. R. Celaya, A. Saxena, S. Saha, and K. Goebel, NASA Ames Research Center*
+
 
 ## Astrodynamics
 - [**Pose Estimation Challenge 2021**](https://kelvins.esa.int/pose-estimation-2021/home/) - **15.7 GB - Regression Task**
@@ -107,26 +128,3 @@ University of Strathclyde*
 
 - [**G2Net 2 - Detecting Continuous Gravitational Waves**](https://www.kaggle.com/competitions/g2net-detecting-continuous-gravitational-waves/overview) - **227.1 GB - Binary Classification**
   - This is a follow-up competition of the Grav2Net one. The goal of this competition is to find continuous gravitational-wave signals. You will develop a model sensitive enough to detect weak yet long-lasting signals emitted by rapidly-spinning neutron stars within noisy data.
-
-
-## Currently Not Available !
-
-*these datasets are currently not available, broken links, or removed by the authors :'(*
-
-- [**CFRP Composites Dataset**](https://www.nasa.gov/content/prognostics-center-of-excellence-data-set-repository) - **4.5 GB - Expected End-of-life Prediction**
-  - Run-to-failure experiments were run on CFRP panels with periodic measurements to capture internal damage growth under tension-tension fatigue. Monitoring data consist of lamb wave signals from a network of 16 piezoelectric (PZT) sensors and multiple triaxial strain gages. Additionally, periodic x-rays were taken to characterize internal damage as ground truth information. Three different layups were tested. Dataset is organized into three zipped folders each containing data from coupons of single layup type and includes a readme file, and a folder with reports and papers published from this dataset. *Abhinav Saxena, Kai Goebel, Cecilia C. Larrosa, and Fu-Kuo Chang. Experiments were conducted at Stanford Structures and Composites Laboratory (SACL) in collaboration with the Prognostic Center of Excellence (PCoE) of NASA Ames Research Center.*
-
-- [**Turbofan Engine Degradation Simulation Data Set**](https://www.nasa.gov/content/prognostics-center-of-excellence-data-set-repository) - **45.3 MB - Prognosis**
-  - Engine degradation simulation was carried out using C-MAPSS. Four different were sets simulated under different combinations of operational conditions and fault modes. Records several sensor channels to characterize fault evolution. The dataset is in text format and has been zipped including a readme file, and an original paper describing damage propagation modeling. *A. Saxena and K. Goebel (2008), Prognostics CoE at NASA Ames.*
-
-- [**Turbofan Engine Degradation Simulation Dataset-2**](https://www.nasa.gov/content/prognostics-center-of-excellence-data-set-repository) - **14.8 GB - Prognosis**
-  - The generation of data-driven prognostics models requires the availability of datasets with run-to-failure trajectories. In order to contribute to the development of these methods, the dataset provides a new realistic dataset of run-to-failure trajectories for a small fleet of aircraft engines under realistic flight conditions. The damage propagation modelling used for the generation of this synthetic dataset builds on the modeling strategy from previous work . The dataset was generated with the Commercial Modular Aero-Propulsion System Simulation (C-MAPSS) dynamical model. The data set is been provided by the Prognostics CoE at NASA Ames in collaboration with ETH Zurich and PARC. Readme file for the dataset describing the experimetal details and data can be found [here](https://ti.arc.nasa.gov/m/project/prognostic-repository/Run_to_Failure_Simulation_Under_Real_Flight_Conditions_Dataset.pdf). The dataset is in csv format and has been zipped. A python code to unzip the files can be found [here](https://ti.arc.nasa.gov/m/project/prognostic-repository/N-CMAPSS_Example_data_loading_and_exploration.ipynb). *M. Chao, C.Kulkarni, K. Goebel and O. Fink (2021), NASA Ames and ETH Zurich*
-
-- [**Capacitor Electrical Stress Data Set**](https://www.nasa.gov/content/prognostics-center-of-excellence-data-set-repository) - **4.8 GB - Prognosis**
-  - Capacitors were subjected to electrical stress under three voltage levels i.e 10V, 12V and 14V. Data Set contains EIS data as well as Charge/Discharge Signal data. DataSet Reference document can be downloaded [here](http://ti.arc.nasa.gov/m/project/prognostic-repository/Description%20of%20Electrolytic%20Capacitors%20under%20Electrical%20Overstress%20Data%20Sets.pdf), The dataset is in .mat format and has been zipped. *J. Renwick, C. Kulkarni, and J Celaya, NASA Ames Research Center*
-
-- [**Capacitor Electrical Stress Data Set - 2**](https://www.nasa.gov/content/prognostics-center-of-excellence-data-set-repository) - **1 kB - Prognosis**
-  - Capacitors were subjected to electrical stress at 10V. DataSet Reference document can be downloaded [here](http://ti.arc.nasa.gov/m/project/prognostic-repository/Electrolytic%20Capacitors%20under%20Electrical%20Overstress%20Data%20Sets.pdf), The dataset is in .mat format and has been zipped. *J. Celaya, C. Kulkarni, G. Biswas, and K. Goebel, NASA Ames Research Center*
-
-- [**MOSFET Thermal Overstress Aging Data Set**](https://www.nasa.gov/content/prognostics-center-of-excellence-data-set-repository) - **7.3 GB - Prognosis**
-  - Run-to-failure experiments on Power MOSFETs under thermal overstress. DataSet Reference document can be downloaded [here](http://ti.arc.nasa.gov/m/project/prognostic-repository/MOSFET%20Thermal%20Overstress%20Aging%20Document.pdf), The dataset is in .mat format and has been zipped. *J. R. Celaya, A. Saxena, S. Saha, and K. Goebel, NASA Ames Research Center*
