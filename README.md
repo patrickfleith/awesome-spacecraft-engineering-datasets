@@ -19,6 +19,9 @@ A list of awesome and diverse datasets related to space vehicle engineering for 
 - [**Statlog (Landsat Satellite) Data Set**](https://archive.ics.uci.edu/ml/datasets/Statlog+(Landsat+Satellite)) - **< 1MB - Classification**
   - The dataset consists of the multi-spectral values of pixels in 3x3 neighbourhoods in a satellite image, and the classification associated with the central pixel in each neighbourhood. The aim is to predict this classification, given the multi-spectral values. In the sample database, the class of a pixel is coded as a number. - 2 ASCII files sat.trn and sat.tst - *Ashwin Srinivasan (1993), University of Strathclyde*
 
+- [**Controlled Anomalies Time Series (CATS) Dataset**](https://zenodo.org/records/8338435) - **2.0 GB**
+  - The Controlled Anomalies Time Series (CATS) Dataset is a large, multivariate time series dataset designed specifically for benchmarking anomaly detection algorithms. It contains 17 variables (sensors, control commands, and external stimuli) from a simulated complex system, with 5 million data points including 200 injected anomalies. This dataset is particularly useful for evaluating and developing algorithms for anomaly detection in multivariate time series, supporting both semi-supervised (novelty detection) and unsupervised (outlier detection) approaches. The time series data are in the a .csv or .parquet file. *Patrick Fleith. (2023). Controlled Anomalies Time Series (CATS) Dataset (Version 2) [Data set]. Solenix Engineering GmbH. https://doi.org/10.5281/zenodo.8338435*
+
 ## Engineering Datasets for Outliers & Anomalies Detection
 
 - [**SMAP & MSL Dataset**](https://www.kaggle.com/datasets/patrickfleith/nasa-anomaly-detection-dataset-smap-msl) - **~ 250 MB - Anomaly/Novelty Detection** 
