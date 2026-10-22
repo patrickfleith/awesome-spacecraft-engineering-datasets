@@ -1,0 +1,5 @@
+{
+  "toolkit_version": "main",
+  "adapter_mode": "symlink",
+  "skills": ["commit", "decide", "glossary", "log", "unslop", "write-manual"]
+}

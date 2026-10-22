@@ -1,0 +1,60 @@
+# Proposed categories for dataset cards. Review before enforcing them.
+status: draft
+
+scope:
+  include: Spacecraft, rovers, launch vehicles, and supporting engineering activities.
+  exclude: Downstream Earth observation applications such as land-cover classification.
+
+usage:
+  task: What the model predicts, estimates, generates, or decides.
+  domain: The engineering subsystem, discipline, or operational context.
+  multiple_values: Assign multiple tags when the dataset supports distinct tasks or spans domains.
+  specificity: Prefer a specific task over its broad parent; use regression or classification when no more specific task fits.
+  evidence: Assign tasks supported by the dataset documentation or annotations; flag speculative uses for review.
+  unknowns: Do not guess categories; omit an unknown optional domain and flag an unknown required task for review.
+  extensions: Propose a new category when no existing definition fits.
+  scope_review: A matching category alone does not establish that a dataset is in scope.
+
+tasks:
+  regression: Predict a continuous quantity from input data.
+  classification: Assign classes to samples, images, signals, or documents.
+  forecasting: Predict future values or events from past observations.
+  anomaly-detection: Identify observations or intervals that depart from expected behavior.
+  fault-diagnosis: Identify or isolate a fault type, affected component, or failure cause.
+  remaining-useful-life-prediction: Predict time or cycles remaining until a defined end-of-life threshold.
+  state-estimation: Infer internal or dynamic states such as battery charge, vehicle velocity, or attitude.
+  parameter-estimation: Infer physical or model parameters such as drag coefficients or component efficiencies.
+  pose-estimation: Estimate the position and orientation of a target relative to an observer.
+  object-detection: Locate and identify objects in images or other sensor observations.
+  segmentation: Assign labels to individual pixels, points, or regions.
+  tracking: Associate and follow targets across successive observations.
+  mapping-and-localization: Reconstruct an environment or locate a vehicle within it, including SLAM.
+  control: Select commands or learn policies that regulate vehicle or subsystem behavior.
+  planning-and-optimization: Choose trajectories, paths, schedules, or designs under objectives and constraints.
+  surrogate-modeling: Approximate an engineering simulation or physical input-output relationship.
+  information-retrieval: Find relevant documents, passages, or engineering records for a query.
+  information-extraction: Extract entities, relations, requirements, or structured facts from text.
+  question-answering: Answer questions about engineering content, including multiple-choice benchmarks.
+  text-generation: Generate or summarize engineering text from prompts or source documents.
+  language-modeling: Learn language patterns from an engineering text corpus.
+
+domains:
+  propulsion: Thrusters, engines, propellants, feed systems, and propulsion performance.
+  power: Electrical generation, storage, distribution, and power electronics.
+  thermal: Heat transfer, temperature regulation, insulation, and thermal protection.
+  structures-and-materials: Structural loads, vibration, fatigue, damage, and material behavior.
+  mechanisms: Bearings, actuators, moving assemblies, deployment systems, and tribology.
+  avionics-and-software: Onboard computers, electronics, embedded software, and data handling.
+  communications: Radio or optical links, antennas, link performance, and communication networks.
+  guidance-navigation-and-control: Attitude and motion estimation, guidance, stabilization, and vehicle control.
+  astrodynamics: Orbits, trajectory dynamics, maneuvers, and mission trajectory design.
+  rendezvous-and-servicing: Proximity operations, docking, inspection, capture, and in-space servicing.
+  robotics-and-surface-mobility: Rovers, manipulators, terrain traversal, and wheel-soil interaction.
+  mission-operations: Telemetry monitoring, commanding, scheduling, resource management, and onboard data prioritization.
+  systems-engineering: Mission architecture, requirements, trade studies, verification, and engineering knowledge.
+  manufacturing-and-testing: Fabrication, machining, assembly, inspection, and engineering test processes.
+  space-environment: Radiation, plasma, charging, atmospheric drag conditions, and space weather affecting vehicles.
+  space-situational-awareness: Detecting and characterizing orbital objects, debris, and conjunction risks.
+  aerodynamics-and-aerothermodynamics: Atmospheric flight, aerodynamic loads, aeroacoustics, and entry heating.
+  life-support-and-habitats: Crew environmental control, consumables, and habitat systems.
+  payload-engineering: Payload hardware, calibration, instrument health, and onboard instrument operation.
