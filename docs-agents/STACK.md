@@ -2,7 +2,7 @@
 
 - **Content:** Markdown dataset catalog in `README.md`.
 - **Hosting and collaboration:** GitHub repository and issues.
-- **Contribution intake:** Markdown issue template at `.github/ISSUE_TEMPLATE/dataset-request.md`.
+- **Contribution intake:** Markdown issue template at `.github/ISSUE_TEMPLATE/dataset-submission.md`.
 - **Agent context:** agents-control docs, six repository skills, and generated Claude Code adapters.
 - **Runtime and dependencies:** No application runtime, package manifest, or dependency manager. Link maintenance uses Python 3.13 and its standard library. Publishing reports uses the GitHub CLI included on GitHub-hosted Ubuntu runners.
 - **Validation:** Review Markdown formatting, dataset metadata, citations, and source links. `.github/workflows/check-links.yml` tests the link checker on pull requests that change the checker or workflow. Scheduled and manual runs also check external links in `README.md`.

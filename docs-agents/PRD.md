@@ -26,4 +26,4 @@ The repository maintains a curated Markdown list. Dataset providers host the lin
 
 ## Maintenance
 
-Follow the surrounding README format when editing entries. Check source material before changing factual metadata. Use `.github/ISSUE_TEMPLATE/dataset-request.md` for proposed additions. No formal success metrics or release process are documented.
+Follow the surrounding README format when editing entries. Check source material before changing factual metadata. Use `.github/ISSUE_TEMPLATE/dataset-submission.md` for proposed additions. No formal success metrics or release process are documented.

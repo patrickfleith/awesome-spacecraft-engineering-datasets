@@ -9,7 +9,7 @@ one-line `CLAUDE.md` adapter (`@AGENTS.md`). Keep it compact and current.
 - **What this is:** A curated list of spacecraft engineering and related space datasets for researchers and industry practitioners.
 - Before acting, consult the relevant project doc below.
 - Keep changes minimal and follow the existing Markdown entry format.
-- Dataset entries belong in `README.md`; use `.github/ISSUE_TEMPLATE/dataset-request.md` for the expected metadata.
+- Dataset entries belong in `README.md`; use `.github/ISSUE_TEMPLATE/dataset-submission.md` for the expected metadata.
 - Verify dataset facts against the linked source before adding or changing them.
 - This repository has no application code, build system, or automated test suite.
 
@@ -26,7 +26,7 @@ doc does not exist yet, do not fabricate one. Create it with the skill noted bel
 | Doc | Path | What it captures | Skill |
 |-----|------|------------------|-------|
 | Dataset catalog | README.md | Public dataset list, categories, descriptions, and source links. | none |
-| Dataset request | .github/ISSUE_TEMPLATE/dataset-request.md | Metadata requested for proposed additions. | none |
+| Dataset submission | .github/ISSUE_TEMPLATE/dataset-submission.md | Metadata requested for proposed additions. | none |
 | Product context | docs-agents/PRD.md | Purpose, audience, and catalog content requirements. | none |
 | Stack | docs-agents/STACK.md | Repository format, tools, and validation. | `log` |
 | Roadmap | docs-agents/ROADMAP.md | Recorded future work. | none |
