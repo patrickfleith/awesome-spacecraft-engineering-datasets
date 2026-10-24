@@ -12,12 +12,13 @@ Awesome Spacecraft Engineering Datasets helps industry practitioners and researc
 
 ## Existing content requirements
 
-The README and dataset request template establish the current entry format:
+The README generator and dataset submission template establish the current entry format:
 
-- Group entries by engineering task or space domain.
+- Group entries by spacecraft subsystem or domain, with a cross-reference by task.
 - Include the dataset name and source link.
 - Describe the dataset, its intended task, size, and data format where available.
 - Credit authors or provide a citation where available.
+- Show tasks, label availability, and data origin as badges. Mark an unchecked licence as `unverified`.
 - Identify announced datasets that are not yet available.
 
 ## Scope
@@ -26,4 +27,6 @@ The repository maintains a curated Markdown list. Dataset providers host the lin
 
 ## Maintenance
 
-Follow the surrounding README format when editing entries. Check source material before changing factual metadata. Use `.github/ISSUE_TEMPLATE/dataset-submission.md` for proposed additions. No formal success metrics or release process are documented.
+Edit dataset entries and controlled vocabularies in `scripts/build-readme.py`, then run `python3 scripts/build-readme.py` from the repo root to regenerate `README.md`. The generator validates domain, task, and origin values and rejects missing tasks or empty licences. YAML dataset cards remain planned under DEC-001.
+
+Check source material before changing factual metadata. Use `.github/ISSUE_TEMPLATE/dataset-submission.md` for proposed additions. A GitHub Actions workflow checks external catalog links weekly and on manual runs; it also runs the link checker tests. See `docs-agents/STACK.md` for validation commands. No formal success metrics or release process are documented.
