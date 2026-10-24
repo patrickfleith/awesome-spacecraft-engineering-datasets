@@ -40,5 +40,5 @@ Authors and year, or the full reference to cite.
 
 - [ ] It is not in the README already
 - [ ] The link works today and the data is public
-- [ ] It covers spacecraft, rovers, launch vehicles or the engineering behind them, and is not a downstream Earth observation application
+- [ ] It covers spacecraft, rovers, launch vehicles or the mission engineering or operation, and is not a downstream Earth observation application
 - [ ] I read the facts above off the source page rather than recalling or generating them
