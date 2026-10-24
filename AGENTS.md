@@ -9,9 +9,9 @@ one-line `CLAUDE.md` adapter (`@AGENTS.md`). Keep it compact and current.
 - **What this is:** A curated list of spacecraft engineering and related space datasets for researchers and industry practitioners.
 - Before acting, consult the relevant project doc below.
 - Keep changes minimal and follow the existing Markdown entry format.
-- Dataset entries belong in `README.md`; use `.github/ISSUE_TEMPLATE/dataset-submission.md` for the expected metadata.
+- Edit dataset entries and controlled vocabularies in `scripts/build-readme.py`, then run `python3 scripts/build-readme.py` from the repo root to regenerate `README.md`. Use `.github/ISSUE_TEMPLATE/dataset-submission.md` for submission metadata.
 - Verify dataset facts against the linked source before adding or changing them.
-- This repository has no application code, build system, or automated test suite.
+- This repository has no application runtime. Python scripts generate the README and check external links; the link checker has automated tests and a GitHub Actions workflow. See `docs-agents/STACK.md` for validation commands.
 
 ## Writing rules
 
